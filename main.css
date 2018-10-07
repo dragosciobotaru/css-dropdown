@@ -1,0 +1,78 @@
+.navDefault {
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #4a4a4f;
+    
+}
+
+button {
+    
+    border:none;
+    background-color: #0997d3;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer; /* is like a hand */
+    
+}
+
+.dropdownMenu {
+    
+    list-style: none; /* This is traditional to remove the bullet point from each list item. */
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50px;
+    z-index: -1; /* Link will not be on the top of the menu anymore.Allways it will be lower then the other elements. */
+    width: 150px; /* This will match with our button. */
+    box-shadow: 9px 7px 30px 4px rgba(0,0,0,0.75);
+    padding: 0px;
+    text-align: center;
+    transform: translateY(-100%);/*This is used to hide the links*/
+    transition: transform .5s ease-in-out;
+
+}
+
+.dropdownLink {
+    
+    text-decoration: none; /* This is traditional.The underline will dissapear. */
+    display: block;
+    background-color: #f9f9f9;
+    color: #4a4a4f;
+    padding: 10px 5px;
+    transition: background-color .5s ease-in-out ,color .5s ease-in-out; /* Those are the transition of the links. */
+    
+}
+
+.dropdownLink:hover {
+    
+    color: #fff;
+    background-color: #a0a0a3;
+    
+}
+
+.dropdown {
+    
+    width: 150px;
+    position: relative;
+    box-shadow: 11px 5px 27px 4px rgba(0,0,0,0.75);
+    
+}
+
+.dropdown:hover button {
+    
+    background-color: #018ec5;
+    
+}
+
+.dropdown:hover .dropdownMenu {
+    
+    transform: translateY(0px); /* This transform back to the visible transition. */
+    
+}
+
